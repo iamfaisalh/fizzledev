@@ -214,7 +214,7 @@ export default function Projects() {
     <section
       id="projects"
       ref={sectionRef}
-      className="py-20 relative min-h-[4400px] md:min-h-[2600px]"
+      className="py-20 relative min-h-[4300px] md:min-h-[2600px]"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div
