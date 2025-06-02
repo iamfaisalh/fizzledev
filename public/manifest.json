@@ -1,0 +1,24 @@
+{
+  "name": "FizzleDev - Faisal Hakimi Portfolio",
+  "short_name": "FizzleDev",
+  "description": "Full Stack Software Engineer Portfolio Faisal Hakimi",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#111827",
+  "theme_color": "#8b5cf6",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/images/fizzledev-logo192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/images/fizzledev-logo512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
