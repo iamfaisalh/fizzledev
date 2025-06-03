@@ -4,7 +4,7 @@ export default function Head() {
   return (
     <>
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <meta name="theme-color" content="#8b5cf6" />
+      <meta name="theme-color" content="#111827" />
       <meta name="color-scheme" content="dark" />
       <link rel="canonical" href={SITE_URL} />
       <link rel="icon" href="/images/fizzledev-logo.png" sizes="32x32" />
