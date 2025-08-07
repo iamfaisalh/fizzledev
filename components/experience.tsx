@@ -34,11 +34,11 @@ export default function Experience() {
           title: "Software Engineer",
           period: "Jan 2025 – Present",
           highlights: [
-            "Optimized SEO and Core Web Vitals, elevating performance scores from 33 to 88 on mobile and 70 to 100 on desktop",
-            "Integrated CMS platforms (WordPress ACF, Storyblok, Plasmic) with Shopify GraphQL API and Next.js, streamlining content workflows across marketing and product teams",
-            "Engineered dynamic XML sitemap and implemented region-aware hreflang tags to boost global search visibility and indexing",
-            "Created a design system mapping Figma tokens (with Tokens Studio plugin) to Tailwind CSS config, reducing UI inconsistencies and rework",
-            "Managed multi-environment CI/CD with GitHub and AWS for dev, UAT, and production deployments with consistent build pipelines",
+            "Solely led performance optimizations that, for the first time in company history, passed Core Web Vitals on both mobile and desktop, raising scores from 33 to 88 (mobile) and 70 to 100 (desktop).",
+            "Boosted search visibility with a dynamic XML sitemap and region-aware hreflang tags. Audited crawl issues and tracked indexing with Google Search Console, Ahrefs, and GTM.",
+            "Transitioned CMS platforms from WordPress ACF to Storyblok and Plasmic, integrating with Shopify's GraphQL API and Next.js to streamline regional content delivery.",
+            "Designed a scalable UI system by mapping Figma Tokens (via Tokens Studio) into Tailwind CSS configuration, reducing UI drift and speeding up development.",
+            "Set up GitHub-based CI/CD pipelines for dev, UAT, and production environments using AWS, ensuring consistent and reliable deployments.",
           ],
         },
       ],
@@ -53,10 +53,8 @@ export default function Experience() {
           title: "Founder & Full Stack Engineer",
           period: "Feb 2024 – Present",
           highlights: [
-            "Built a Retrieval-Augmented Generation (RAG) system with OpenAI, LangChain, and Supabase for domain-specific document querying through vector search with embeddings and chunking, tailored to industry content",
-            "Implemented SSO authentication with role-based access control (RBAC) for multi-tenant SaaS applications",
-            "Leveraged GitHub and Vercel for automated deployments, preview builds, and streamlined staging-to-production flow with Next.js",
-            "Developed a financial workflow tool for a nonprofit, reducing manual donation and membership management",
+            "Built a financial workflow tool for a nonprofit, automating donation and membership tracking.",
+            "Delivered critical product features for stealth startup clients under aggressive timelines, including secure auth, RBAC, and CMS-driven pages, helping accelerate MVP launches and investor demos.",
           ],
         },
       ],
@@ -64,33 +62,53 @@ export default function Experience() {
         "FizzleDev is my freelance dev practice focused on improving and building performant web apps and tools for clients, using modern technologies and frameworks.",
     },
     {
+      company: "Stealth Startup",
+      location: "Remote",
+      totalPeriod: "Dec 2024 – May 2025",
+      color: "from-purple-600 to-blue-400",
+      positions: [
+        {
+          title: "Founding Engineer",
+          period: "Feb 2024 – Present",
+          highlights: [
+            "Sole engineer responsible for delivering a fully functional MVP in 3 weeks, enabling the founders to secure investor funding and pilot users (university partners).",
+            "Built a Retrieval-Augmented Generation (RAG) system using OpenAI, LangChain, and Supabase to help financial aid officers query complex policy PDF documents using natural language.",
+            "Developed an AI agent with chain-of-thought reasoning to triage student emails, perform actions, and integrate with third-party systems like Banner (SIS) and PeopleSoft.",
+            "Built the entire stack in Next.js (TypeScript, React, Node.js, Tailwind CSS) with Supabase Auth for SSO and RBAC, secured via Row-Level Security (RLS).",
+            "Tuned prompts, refined chunking, and debugged hallucinations to improve answer grounding and reliability.",
+            "Leveraged GitHub and Vercel for automated deployments, preview builds, and streamlined staging-to-production flow with Next.js.",
+          ],
+        },
+      ],
+    },
+    {
       company: "Dart Health",
       location: "San Francisco, CA",
       totalPeriod: "Jan 2021 – Feb 2024",
-      color: "from-purple-600 to-blue-400",
+      color: "from-purple-400 to-pink-400",
       positions: [
         {
           title: "Lead Full Stack Engineer",
           period: "Sep 2021 – Feb 2024",
           highlights: [
-            "Built healthcare compliance chatbot with OpenAI Assistants API, reducing support questions by 40%",
-            "Integrated Stripe Connect for B2B/B2C payments and built invoicing with Adobe PDF Services and the Merge API",
-            "Implemented full-stack testing with Jest + Cypress, saving 15–20 hours/week in QA",
-            "Shipped a Linear-meets-Slack-style project portal and messaging system with React, TypeScript, and Tailwind CSS",
+            "Built a HIPAA-aware chatbot using OpenAI Assistants API, reducing founder support workload by 40%.",
+            "Integrated Stripe Connect for B2B and B2C payments, and implemented PDF invoicing with Merge API and Adobe PDF Services.",
+            "Implemented full-stack testing with Jest and Cypress, saving 15–20 hours/week in manual QA.",
+            "Led development of a project portal and real-time messaging system combining Linear-style task flows with Slack-style chat (React, TypeScript, Tailwind CSS).",
           ],
         },
         {
           title: "Software Engineer Intern",
           period: "Jan 2021 – Sep 2021",
           highlights: [
-            "Led development of social media automation tools including post scheduling (Facebook, Instagram, Twitter) and Bannerbear integration",
-            "Translated Figma wireframes into reusable React components, cutting design-to-dev handoff time by 20%",
-            "Designed and optimized database schemas in MongoDB for scalability",
+            "Built a social media automation system with scheduling for Facebook, Instagram, and Twitter, powered by Bannerbear and platform APIs.",
+            "Translated Figma wireframes into modular, reusable React components, speeding up dev handoff by 20%.",
+            "Designed and optimized database schemas in MongoDB for scalability.",
           ],
         },
       ],
       description:
-        "Promoted from intern to lead engineer as the company evolved from CRM to fintech to healthcare compliance. The company, originally called MarketFly, was acquired and rebranded—first to Puzzl, then to Dart Health.",
+        "Promoted from intern to lead engineer as the company evolved from CRM to fintech to healthcare compliance. The company, MarketFly, was acquired and rebranded to Puzzl, then to Dart Health.",
     },
   ];
 
