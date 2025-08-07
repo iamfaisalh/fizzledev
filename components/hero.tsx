@@ -122,8 +122,8 @@ export default function Hero() {
 
             <div className="group relative">
               <a
-                href="/Faisal_Hakimi_Resume.pdf"
-                download="Faisal_Hakimi_Resume.pdf"
+                href="/Faisal_Hakimi_Resume_2025.pdf"
+                download="Faisal_Hakimi_Resume_2025.pdf"
                 className="p-3 rounded-full bg-gradient-to-r from-purple-500/20 to-pink-500/20 hover:from-purple-500/30 hover:to-pink-500/30 transition-all duration-300 hover:scale-110 block"
                 aria-label="Download Resume"
               >
