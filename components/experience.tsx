@@ -88,7 +88,7 @@ export default function Experience() {
       color: "from-purple-400 to-pink-400",
       positions: [
         {
-          title: "Lead Full Stack Engineer",
+          title: "Founding Engineer",
           period: "Sep 2021 – Feb 2024",
           highlights: [
             "Built a HIPAA-aware chatbot using OpenAI Assistants API, reducing founder support workload by 40%.",
