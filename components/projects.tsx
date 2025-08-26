@@ -24,8 +24,7 @@ interface Project {
 const projects: Project[] = [
   {
     title: "AI Image Generation Studio",
-    description:
-      "Generate and modify LinkedIn style B2B advertisement images.",
+    description: "Generate and modify LinkedIn style B2B advertisement images.",
     tech: [
       "OpenAI (gpt-image-1)",
       "Next.js",
@@ -42,7 +41,7 @@ const projects: Project[] = [
       // `${IMAGES_PATH}/ImageGenerationStudio/slide3.png`,
       // `${IMAGES_PATH}/ImageGenerationStudio/slide4.png`,
     ],
-    github: `${GITHUB_URL}/image-generation-studio`,
+    // github: `${GITHUB_URL}/image-generation-studio`,
     color: "from-blue-400 to-purple-400",
     comingSoon: false,
   },
@@ -338,36 +337,50 @@ export default function Projects() {
                     </>
                   )}
 
-                  <div
-                    className={`absolute bottom-0 left-0 right-0 bg-gray-900/80 backdrop-blur-sm py-2 px-4 flex justify-between items-center transform transition-transform duration-300 translate-y-0 sm:translate-y-full group-hover:translate-y-0 z-10`}
-                  >
-                    <div className="flex-1">
-                      {project.images.length > 1 && !project.comingSoon && (
+                  {project.images.length > 1 && !project.comingSoon && (
+                    <div
+                      className={`absolute bottom-0 left-0 right-0 bg-gray-900/80 backdrop-blur-sm py-2 px-4 flex justify-between items-center transform transition-transform duration-300 translate-y-0 sm:translate-y-full group-hover:translate-y-0 z-10`}
+                    >
+                      <div className="flex-1">
                         <span className="text-xs text-gray-400">
                           Click dots or arrows to navigate
                         </span>
-                      )}
-                      {project.comingSoon && (
+                      </div>
+                    </div>
+                  )}
+                  {project.comingSoon && (
+                    <div
+                      className={`absolute bottom-0 left-0 right-0 bg-gray-900/80 backdrop-blur-sm py-2 px-4 flex justify-between items-center transform transition-transform duration-300 translate-y-0 sm:translate-y-full group-hover:translate-y-0 z-10`}
+                    >
+                      <div className="flex-1">
                         <span className="text-xs text-yellow-400 font-medium">
                           Project in development
                         </span>
-                      )}
+                      </div>
                     </div>
+                  )}
 
-                    {!project.comingSoon && (
-                      <div className="flex space-x-3">
-                        {project.github && (
+                  {!project.comingSoon && (
+                    <div className="flex space-x-3">
+                      {project.github && (
+                        <div
+                          className={`absolute bottom-0 left-0 right-0 bg-gray-900/80 backdrop-blur-sm py-2 px-4 flex justify-between items-center transform transition-transform duration-300 translate-y-0 sm:translate-y-full group-hover:translate-y-0 z-10`}
+                        >
                           <a
                             href={project.github}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-gray-300 hover:text-white transition-colors flex items-center space-x-1 cursor-pointer"
+                            className="text-gray-300 hover:text-white transition-colors flex items-center space-x-1 cursor-pointer ml-auto"
                           >
                             <GitHubIcon size={16} />
                             <span className="text-sm">GitHub</span>
                           </a>
-                        )}
-                        {project.demo && (
+                        </div>
+                      )}
+                      {project.demo && (
+                        <div
+                          className={`absolute bottom-0 left-0 right-0 bg-gray-900/80 backdrop-blur-sm py-2 px-4 flex justify-between items-center transform transition-transform duration-300 translate-y-0 sm:translate-y-full group-hover:translate-y-0 z-10`}
+                        >
                           <a
                             href={project.demo}
                             target="_blank"
@@ -377,10 +390,10 @@ export default function Projects() {
                             <ExternalLink size={16} />
                             <span className="text-sm">Demo</span>
                           </a>
-                        )}
-                      </div>
-                    )}
-                  </div>
+                        </div>
+                      )}
+                    </div>
+                  )}
                 </div>
 
                 {project.images.length > 1 && (
