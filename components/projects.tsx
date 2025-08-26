@@ -23,9 +23,33 @@ interface Project {
 
 const projects: Project[] = [
   {
+    title: "AI Image Generation Studio",
+    description:
+      "Generate and modify LinkedIn style B2B advertisement images.",
+    tech: [
+      "OpenAI (gpt-image-1)",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Shadcn",
+      "Supabase",
+      "Vercel",
+      "Zod",
+    ],
+    images: [
+      `${IMAGES_PATH}/ImageGenerationStudio/slide1.png`,
+      // `${IMAGES_PATH}/ImageGenerationStudio/slide2.png`,
+      // `${IMAGES_PATH}/ImageGenerationStudio/slide3.png`,
+      // `${IMAGES_PATH}/ImageGenerationStudio/slide4.png`,
+    ],
+    github: `${GITHUB_URL}/image-generation-studio`,
+    color: "from-blue-400 to-purple-400",
+    comingSoon: false,
+  },
+  {
     title: "Financial App",
     description:
-      "An application to buy and sell stocks with the ability to search stocks, see live data with an interactive chart, and also analyze your portfolio using AI.",
+      "Buy and sell stocks with the ability to search stocks, see live data with an interactive chart, and also analyze your portfolio using AI.",
     tech: [
       "Python",
       "Flask",
@@ -61,7 +85,7 @@ const projects: Project[] = [
   {
     title: "Streamify",
     description:
-      "Full stack application for connecting your Spotify account and displaying data and analytics on the dashboard.",
+      "Connect your Spotify account and view data and analytics on the dashboard.",
     tech: [
       "React",
       "TypeScript",
@@ -77,7 +101,7 @@ const projects: Project[] = [
   {
     title: "FizzleDev",
     description:
-      "This application you are on! Once again, FizzleDev is my freelance dev practice focused on improving and building performant web apps and tools for clients, using modern technologies and frameworks.",
+      "This website you are on! Once again, FizzleDev is my freelance dev practice focused on improving and building performant web apps and tools for clients, using modern technologies and frameworks.",
     tech: [
       "Next.js",
       "TypeScript",
@@ -94,7 +118,7 @@ const projects: Project[] = [
   {
     title: "UNO",
     description:
-      "Web application for the card game, UNO. Some features include accounts, game lobbies, game chat, and leaderboards. TODO: Mobile responsive.",
+      "The card game, UNO. Some features include accounts, game lobbies, game chat, and leaderboards. TODO: Mobile responsive.",
     tech: ["Node/Express.js", "Handlebars", "PostgreSQL", "AWS S3"],
     images: [`${IMAGES_PATH}/Uno/slide1.png`],
     github: `${GITHUB_URL}/term-project-uno-forked`,
@@ -103,8 +127,7 @@ const projects: Project[] = [
   },
   {
     title: "Estimate Builder",
-    description:
-      "Full stack application for paving contractors to create estimates for their customers.",
+    description: "Paving contractors can create estimates for their customers.",
     tech: [
       "React",
       "TypeScript",
@@ -247,34 +270,27 @@ export default function Projects() {
                 //   transitionDelay: `${index * 300}ms`,
                 // }}
               >
-                <div className="relative h-auto overflow-hidden group/carousel">
-                  {/* <div className="relative h-64 overflow-hidden group/carousel"> */}
+                <div className="relative h-64 md:h-72 lg:h-80 overflow-hidden group/carousel">
                   <div
                     className="flex transition-transform duration-500 ease-in-out h-full"
                     style={{
                       transform: `translateX(-${
                         (currentImageIndex[index] || 0) * 100
                       }%)`,
-                      width: `${project.images.length * 100}%`,
                     }}
                   >
                     {project.images.map((imageSrc, imgIndex) => (
                       <div
-                        key={imgIndex}
-                        className="relative flex-shrink-0 w-full h-full"
+                        key={`${project.title} - Image ${imgIndex + 1}`}
+                        className="relative h-full flex-[0_0_100%] shrink-0"
                       >
                         <Image
                           src={imageSrc}
                           alt={`${project.title} - Image ${imgIndex + 1}`}
-                          // fill
-                          // className="object-cover transition-transform duration-500 group-hover:scale-110"
-                          className="object-contain w-full h-auto transition-transform duration-500 group-hover:scale-110"
-                          width={0}
-                          height={0}
+                          fill
+                          className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110"
+                          priority={imgIndex === 0}
                         />
-                        <div
-                          className={`absolute inset-0 bg-gradient-to-t ${project.color} opacity-20 group-hover:opacity-30 transition-opacity duration-300`}
-                        ></div>
                       </div>
                     ))}
                   </div>
@@ -323,7 +339,7 @@ export default function Projects() {
                   )}
 
                   <div
-                    className={`absolute bottom-0 left-0 right-0 bg-gray-900/80 backdrop-blur-sm py-2 px-4 flex justify-between items-center transform translate-y-full transition-transform duration-300 group-hover:translate-y-0 z-10`}
+                    className={`absolute bottom-0 left-0 right-0 bg-gray-900/80 backdrop-blur-sm py-2 px-4 flex justify-between items-center transform transition-transform duration-300 translate-y-0 sm:translate-y-full group-hover:translate-y-0 z-10`}
                   >
                     <div className="flex-1">
                       {project.images.length > 1 && !project.comingSoon && (

@@ -174,7 +174,7 @@ export default function About() {
             </div>
 
             <div className="flex-1 text-center lg:text-left">
-              <p className="text-lg text-gray-400 leading-relaxed mb-6">
+              <p className="text-base md:text-lg text-gray-400 leading-relaxed mb-6">
                 I'm a passionate full stack engineer with over 7 years of coding
                 experience and a B.S. in Computer Science from San Francisco
                 State University, which I earned in 2022. I've worked at
