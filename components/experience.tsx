@@ -25,20 +25,16 @@ export default function Experience() {
   }, []);
   const experiences = [
     {
-      company: "Aletha Health",
-      location: "Walnut Creek, CA",
-      totalPeriod: "Jan 2025 – Present",
+      company: "TotalEnergies",
+      location: "Berkeley, CA",
+      totalPeriod: "Sep 2025 – Present",
       color: "from-purple-400 to-pink-400",
       positions: [
         {
-          title: "Software Engineer",
-          period: "Jan 2025 – Present",
+          title: "Senior Software Engineer",
+          period: "Sep 2025 – Present",
           highlights: [
-            "Solely led performance optimizations that, for the first time in company history, passed Core Web Vitals on both mobile and desktop, raising scores from 33 to 88 (mobile) and 70 to 100 (desktop).",
-            "Boosted search visibility with a dynamic XML sitemap and region-aware hreflang tags. Audited crawl issues and tracked indexing with Google Search Console, Ahrefs, and GTM.",
-            "Transitioned CMS platforms from WordPress ACF to Storyblok and Plasmic, integrating with Shopify's GraphQL API and Next.js to streamline regional content delivery.",
-            "Designed a scalable UI system by mapping Figma Tokens (via Tokens Studio) into Tailwind CSS configuration, reducing UI drift and speeding up development.",
-            "Set up GitHub-based CI/CD pipelines for dev, UAT, and production environments using AWS, ensuring consistent and reliable deployments.",
+            "Software Engineer on the PowerSage team, maintaining and enhancing a commercial and industrial energy management platform that controls behind-the-meter battery storage and PV systems to improve efficiency and deliver cost savings.",
           ],
         },
       ],
@@ -60,6 +56,25 @@ export default function Experience() {
       ],
       description:
         "FizzleDev is my freelance dev practice focused on improving and building performant web apps and tools for clients, using modern technologies and frameworks.",
+    },
+    {
+      company: "Aletha Health",
+      location: "Walnut Creek, CA",
+      totalPeriod: "Jan 2025 – Aug 2025",
+      color: "from-purple-400 to-pink-400",
+      positions: [
+        {
+          title: "Software Engineer",
+          period: "Jan 2025 – Aug 2025",
+          highlights: [
+            "Solely led performance optimizations that, for the first time in company history, passed Core Web Vitals on both mobile and desktop, raising scores from 33 to 88 (mobile) and 70 to 100 (desktop).",
+            "Boosted search visibility with a dynamic XML sitemap and region-aware hreflang tags. Audited crawl issues and tracked indexing with Google Search Console, Ahrefs, and GTM.",
+            "Transitioned CMS platforms from WordPress ACF to Storyblok and Plasmic, integrating with Shopify's GraphQL API and Next.js to streamline regional content delivery.",
+            "Designed a scalable UI system by mapping Figma Tokens (via Tokens Studio) into Tailwind CSS configuration, reducing UI drift and speeding up development.",
+            "Set up GitHub-based CI/CD pipelines for dev, UAT, and production environments using AWS, ensuring consistent and reliable deployments.",
+          ],
+        },
+      ],
     },
     {
       company: "Stealth Startup",

@@ -57,11 +57,13 @@ export default function About() {
       "Tailwind CSS",
       "Bootstrap",
       "Material UI",
+      "Ant Design",
       "Shadcn",
       "Radix UI",
       "GSAP",
       "Highcharts",
       "Recharts",
+      "Plotly",
     ],
     Backend: [
       "Express.js",
@@ -74,6 +76,7 @@ export default function About() {
     ],
     "AI / LLMS": [
       "OpenAI",
+      "Claude",
       "LangChain",
       "LangGraph",
       "RAG Pipelines",
@@ -190,7 +193,7 @@ export default function About() {
                 technologies, exploring nature, capturing moments through
                 photography, trying new foods, lifting weights, watching sports,
                 working on cars, and gaming (Call of Duty is my go-to). I'm also
-                a huge animal lover—especially cats.
+                a huge animal lover, especially cats.
               </p>
             </div>
           </div>
