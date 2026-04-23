@@ -174,18 +174,20 @@ export default function About() {
               </div>
             </div>
 
-            <div className="flex-1 text-center lg:text-left">
+            <div className="flex-1 text-left">
               <p className="text-base md:text-lg text-gray-400 leading-relaxed mb-6">
                 Passionate full stack software engineer with 4+ years of
                 professional experience and over 7 years of coding experience.
                 Graduated in 2022 with a B.S. in Computer Science from San
                 Francisco State University. Proven ability to ship fast and own
                 end-to-end systems, from backend APIs and authentication flows
-                to responsive UIs and design systems. Built a production-ready
-                RAG MVP solo in 3 weeks for a stealth startup, helping secure
-                funding and pilot users. Recent work includes performance
-                optimization (Core Web Vitals and SEO), multi-region CMS
-                integrations, and AI agentic workflows.
+                to responsive UIs and design systems.
+              </p>
+              <p className="text-base md:text-lg text-gray-400 leading-relaxed mb-6">
+                Built a production-ready RAG MVP solo in 3 weeks for a stealth
+                startup, helping secure funding and pilot users. Recent work
+                includes performance optimization (Core Web Vitals and SEO),
+                multi-region CMS integrations, and AI agentic workflows.
               </p>
               <p className="text-lg text-gray-400 leading-relaxed">
                 When I'm not coding, you'll find me experimenting with new
