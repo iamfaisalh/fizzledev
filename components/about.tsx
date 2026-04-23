@@ -14,7 +14,7 @@ export default function About() {
           setIsVisible(true);
         }
       },
-      { threshold: 0.1 }
+      { threshold: 0.1 },
     );
 
     if (sectionRef.current) {
@@ -29,8 +29,6 @@ export default function About() {
     { name: "JavaScript", level: 95, color: "from-yellow-400 to-yellow-600" },
     { name: "React", level: 95, color: "from-cyan-400 to-cyan-600" },
     { name: "Next.js", level: 90, color: "from-gray-400 to-gray-600" },
-    { name: "Node.js", level: 90, color: "from-green-400 to-green-600" },
-    { name: "Express.js", level: 90, color: "from-gray-500 to-gray-700" },
     { name: "Python", level: 85, color: "from-blue-500 to-yellow-500" },
     { name: "Tailwind CSS", level: 80, color: "from-teal-400 to-teal-600" },
   ];
@@ -178,22 +176,23 @@ export default function About() {
 
             <div className="flex-1 text-center lg:text-left">
               <p className="text-base md:text-lg text-gray-400 leading-relaxed mb-6">
-                I'm a passionate full stack engineer with over 7 years of coding
-                experience and a B.S. in Computer Science from San Francisco
-                State University, which I earned in 2022. I've worked at
-                early-stage startups where I wore many hats, collaborated
-                closely with founders and designers, and built products from the
-                ground up. I thrive in fast-paced environments where building
-                and shipping quickly drives real impact. From responsive UIs to
-                scalable backend systems, I love turning complex problems into
-                elegant solutions.
+                Passionate full stack software engineer with 4+ years of
+                professional experience and over 7 years of coding experience.
+                Graduated in 2022 with a B.S. in Computer Science from San
+                Francisco State University. Proven ability to ship fast and own
+                end-to-end systems, from backend APIs and authentication flows
+                to responsive UIs and design systems. Built a production-ready
+                RAG MVP solo in 3 weeks for a stealth startup, helping secure
+                funding and pilot users. Recent work includes performance
+                optimization (Core Web Vitals and SEO), multi-region CMS
+                integrations, and AI agentic workflows.
               </p>
               <p className="text-lg text-gray-400 leading-relaxed">
                 When I'm not coding, you'll find me experimenting with new
                 technologies, exploring nature, capturing moments through
                 photography, trying new foods, lifting weights, watching sports,
-                working on cars, and gaming (Call of Duty is my go-to). I'm also
-                a huge animal lover, especially cats.
+                working on cars, and gaming. I'm also a huge animal lover,
+                especially cats.
               </p>
             </div>
           </div>
@@ -271,7 +270,7 @@ export default function About() {
                       ))}
                     </div>
                   </div>
-                )
+                ),
               )}
             </div>
           </div>

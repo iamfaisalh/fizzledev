@@ -79,7 +79,7 @@ const projects: Project[] = [
     ],
     images: [`${IMAGES_PATH}/ChoiceHub/slide1.png`],
     color: "from-pink-400 to-purple-600",
-    comingSoon: true,
+    comingSoon: false,
   },
   {
     title: "Streamify",
@@ -95,7 +95,7 @@ const projects: Project[] = [
     ],
     images: [`${IMAGES_PATH}/Streamify/slide1.png`],
     color: "from-purple-600 to-blue-400",
-    comingSoon: true,
+    comingSoon: false,
   },
   {
     title: "FizzleDev",
@@ -110,7 +110,7 @@ const projects: Project[] = [
       "Resend",
     ],
     images: [`${IMAGES_PATH}/FizzleDev/slide1.png`],
-    github: `${GITHUB_URL}/fizzledev`,
+    // github: `${GITHUB_URL}/fizzledev`,
     color: "from-pink-400 to-purple-600",
     comingSoon: false,
   },
